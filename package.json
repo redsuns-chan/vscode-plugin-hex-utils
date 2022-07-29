@@ -10,14 +10,14 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:hex-utils.helloWorld"
+    "onStartupFinished"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "hex-utils.helloWorld",
-        "title": "Hello World"
+        "command": "hex-utils.hexToLeFloat",
+        "title": "to le float"
       }
     ]
   },
