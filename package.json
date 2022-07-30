@@ -10,16 +10,36 @@
     "Other"
   ],
   "activationEvents": [
-    "onStartupFinished"
+    "*"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
         "command": "hex-utils.hexToLeFloat",
-        "title": "to le float"
-      }
-    ]
+        "title": "HEX -> Float (Little Endian)"
+      },
+	  {
+		"command": "hex-utils.hexToInt",
+		"title": "HEX -> Integer"
+	  },
+	  {
+		"command": "hex-utils.hexToShort",
+		"title": "HEX -> Short"
+	  },
+	  {
+		"command": "hex-utils.hexToUTF8",
+		"title": "HEX -> UTF-8 Character"
+	  }
+    ],
+	"menus": {
+		"editor/context": [
+			{
+				"when": "editorHasSelection",
+				"command": "hex-utils.hexToLeFloat"
+			}
+		]
+	}
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
