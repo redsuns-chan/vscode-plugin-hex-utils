@@ -7,7 +7,6 @@ export function reverseHex(hex: string): string {
 	for (let i: number = 8; i >= 0; i -= 2) {
 		reversed += hex.substring(i - 2, i);
 	}
-	console.log("reversed : " + hex + " -> " + reversed);
 	return reversed;
 }
 /**
@@ -26,7 +25,6 @@ export function parseHexToFloat(hex: any): number | null {
 	else {
 		for (let i = hex.length - 1; i >=0; i -= 1) {
 			if (hex.charCodeAt(i) > 255) {
-				console.log('Wrong string parameter');
 				return null;
 			}
 			int += hex.charCodeAt(i) * multi;
