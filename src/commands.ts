@@ -21,7 +21,12 @@ export function startHexToFloat() {
 	let parsed: string[] = [];
 	for (let i: number = 0; i < selected.length; i += 8) {
 		let converting: string = selected.substring(i, i + 8);
-		converting = reverseHex(converting);
+
+		let config = vscode.workspace.getConfiguration("");
+		let endian = config.get("hex-utils.endian");
+		if (endian === "Little Endian") {
+			converting = reverseHex(converting);
+		}
 		let floatStr = parseHexToFloat("0x" + converting);
 		if (floatStr) {
 			parsed.push(floatStr.toPrecision(2));
