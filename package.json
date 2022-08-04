@@ -37,6 +37,14 @@
         {
           "when": "editorHasSelection",
           "command": "hex-utils.hexToLeFloat"
+        },
+        {
+          "when": "editorHasSelection",
+          "command": "hex-utils.hexToInt"
+        },
+        {
+          "when": "editorHasSelection",
+          "command": "hex-utils.hexToUTF8"
         }
       ]
     },

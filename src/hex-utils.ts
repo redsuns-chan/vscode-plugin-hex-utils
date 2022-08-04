@@ -40,3 +40,13 @@ export function parseHexToFloat(hex: any): number | null {
 	}
 	return float*sign;
 }
+
+export function parseHexToSignedInt(hex: string): number {
+	const hexMask = '0x80' + '00'.repeat(4 - 1);
+	const intMask = parseInt(hexMask, 16);
+	let value = parseInt(hex, 16);
+	if (value >= intMask) {
+		value = value - intMask * 2;
+	}
+	return value;
+}
