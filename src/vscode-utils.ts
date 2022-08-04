@@ -1,5 +1,3 @@
-
-import { start } from 'repl';
 import * as vscode from 'vscode';
 
 export function log(msg: string) {
