@@ -2,6 +2,15 @@
   "name": "hex-utils",
   "displayName": "hex-utils",
   "description": "HEX utilities",
+  "author": {
+    "email": "redsunschan@gmail.com",
+    "name": "RedSuns Chan",
+    "url": "https://github.com/redsuns-chan"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/redsuns-chan/vscode-plugin-hex-utils.git"
+  },
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.69.0"
