@@ -2,9 +2,10 @@
   "name": "hex-utils",
   "displayName": "hex-utils",
   "description": "HEX utilities",
+  "publisher": "redsunschan",
   "author": {
     "email": "redsunschan@gmail.com",
-    "name": "RedSuns Chan",
+    "name": "redsunschan",
     "url": "https://github.com/redsuns-chan"
   },
   "repository": {

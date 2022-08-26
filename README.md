@@ -3,6 +3,9 @@
 ## Description
 A Visual Studio Code Plugin which providing HEX convertors in text editor context menu for you to convert it to Float / UTF-8 / Integer.  
 
+## Plugin Page
+https://marketplace.visualstudio.com/items?itemName=redsunschan.hex-utils
+
 ## Features
 1. HEX to Float
 2. HEX to Signed Integer
